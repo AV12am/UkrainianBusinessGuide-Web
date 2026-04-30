@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Український Путівник у Бізнесі</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Навігація вверху -->
+        <header class="header">
+            <h1>Український Путівник у Бізнесі</h1>
+            <p class="subtitle">Для початківців у бізнесі та інвестиціях</p>
+        </header>
+
+        <!-- Основний вміст -->
+        <main class="main-content">
+            <!-- Вкладка: Компанії -->
+            <section id="companies" class="tab-content active">
+                <div class="search-bar">
+                    <input type="text" id="companySearch" placeholder="🔍 Пошук компаній...">
+                </div>
+                
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Усі</button>
+                    <button class="filter-btn" data-filter="it">IT</button>
+                    <button class="filter-btn" data-filter="trade">Торгівля</button>
+                    <button class="filter-btn" data-filter="finance">Фінанси</button>
+                    <button class="filter-btn" data-filter="education">Освіта</button>
+                </div>
+
+                <div class="companies-list" id="companiesList">
+                    <!-- Дані буде додано JavaScript -->
+                </div>
+            </section>
+
+            <!-- Вкладка: Новини -->
+            <section id="news" class="tab-content">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Усі</button>
+                    <button class="filter-btn" data-filter="startup">Стартапи</button>
+                    <button class="filter-btn" data-filter="finance">Фінанси</button>
+                    <button class="filter-btn" data-filter="tech">Технологія</button>
+                </div>
+
+                <div class="news-list" id="newsList">
+                    <!-- Дані буде додано JavaScript -->
+                </div>
+            </section>
+
+            <!-- Вкладка: Поради -->
+            <section id="tips" class="tab-content">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Усі</button>
+                    <button class="filter-btn" data-filter="beginner">Початківець</button>
+                    <button class="filter-btn" data-filter="intermediate">Середній</button>
+                    <button class="filter-btn" data-filter="advanced">Продвинутий</button>
+                </div>
+
+                <div class="tips-list" id="tipsList">
+                    <!-- Дані буде додано JavaScript -->
+                </div>
+            </section>
+
+            <!-- Вкладка: Аналітика -->
+            <section id="analytics" class="tab-content">
+                <div class="analytics-filter">
+                    <button class="analytics-btn active" data-metric="investments">Інвестиції</button>
+                    <button class="analytics-btn" data-metric="currency">Валюта</button>
+                    <button class="analytics-btn" data-metric="indices">Індекси</button>
+                    <button class="analytics-btn" data-metric="trends">Тренди</button>
+                </div>
+
+                <div class="analytics-content" id="analyticsContent">
+                    <!-- Дані буде додано JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Модальне вікно для деталей -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Таб-навігація внизу -->
+    <footer class="tab-navigation">
+        <button class="tab-btn active" data-tab="companies">
+            <span class="icon">🏢</span>
+            <span class="label">Компанії</span>
+        </button>
+        <button class="tab-btn" data-tab="news">
+            <span class="icon">📰</span>
+            <span class="label">Новини</span>
+        </button>
+        <button class="tab-btn" data-tab="tips">
+            <span class="icon">💡</span>
+            <span class="label">Поради</span>
+        </button>
+        <button class="tab-btn" data-tab="analytics">
+            <span class="icon">📊</span>
+            <span class="label">Аналітика</span>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
